@@ -1,16 +1,16 @@
 'use strict';
 
 var should = require('chai').should();
-var bitcore = require('../');
+var viacore = require('../');
 
 describe('#versionGuard', function() {
-  it('global._bitcore should be defined', function() {
-    should.equal(global._bitcore, bitcore.version);
+  it('global._viacore should be defined', function() {
+    should.equal(global._viacore, viacore.version);
   });
 
   it('throw an error if version is already defined', function() {
     (function() {
-      bitcore.versionGuard('version');
-    }).should.throw('More than one instance of bitcore');
+      viacore.versionGuard('version');
+    }).should.throw('More than one instance of viacore');
   });
 });

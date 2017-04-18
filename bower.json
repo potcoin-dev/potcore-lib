@@ -1,8 +1,8 @@
 {
-  "name": "bitcore-lib",
-  "main": "./bitcore-lib.min.js",
+  "name": "viacore-lib",
+  "main": "./viacore-lib.min.js",
   "version": "0.13.19",
-  "homepage": "http://bitcore.io",
+  "homepage": "http://viacore.io",
   "authors": [
     "BitPay, Inc."
   ],
@@ -12,7 +12,7 @@
   ],
   "keywords": [
     "bitcoin",
-    "bitcore",
+    "viacore",
     "btc",
     "satoshi"
   ],
