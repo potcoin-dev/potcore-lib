@@ -64,6 +64,7 @@ viacore.deps.bs58 = require('bs58');
 viacore.deps.Buffer = Buffer;
 viacore.deps.elliptic = require('elliptic');
 viacore.deps._ = require('lodash');
+viacore.deps.scryptsy = require('scryptsy');
 
 // Internal usage, exposed for testing/advanced tweaking
 viacore.Transaction.sighash = require('./lib/transaction/sighash');
