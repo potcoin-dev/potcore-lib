@@ -2,7 +2,7 @@
   "name": "viacore-lib",
   "version": "0.14.0",
   "description": "A pure and powerful JavaScript Viacoin library.",
-  "author": "BitPay <dev@bitpay.com>",
+  "author": "Romano <romanornr@gmail.com>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
