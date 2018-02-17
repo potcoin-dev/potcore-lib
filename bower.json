@@ -1,5 +1,5 @@
 {
-  "name": "viacore-lib",
+: "name": "viacore-lib",
   "main": "./viacore-lib.min.js",
   "version": "0.13.19",
   "homepage": "http://viacore.io",
