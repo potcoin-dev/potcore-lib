@@ -1,8 +1,8 @@
-# Viacore v0.15.0
+# Potcore v0.15.0
 
 ## Principles
 
-Viacoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Viacoin network allows for highly resilient viacoin infrastructure, and the developer community needs reliable, open-source tools to implement viacoin apps and services. viacore provides a reliable API for JavaScript apps that need to interface with Viacoin.
+Potcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Potcoin network allows for highly resilient potcoin infrastructure, and the developer community needs reliable, open-source tools to implement potcoin apps and services. potcore provides a reliable API for JavaScript apps that need to interface with Potcoin.
 
 To get started, just `npm install bitcore` or `bower install bitcore`.
 
@@ -35,25 +35,25 @@ To get started, just `npm install bitcore` or `bower install bitcore`.
 
 Some functionality is implemented as a module that can be installed separately:
 
-* [Payment Protocol Support](https://github.com/viacoin/viacore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/viacoin/viacore-p2p)
-* [Bitcoin Core JSON-RPC](https://github.com/viacoin/bitcoind-rpc)
-* [Payment Channels](https://github.com/viacoin/viacore-channel)
-* [Mnemonics](https://github.com/viacoin/viacore-mnemonic)
-* [Elliptical Curve Integrated Encryption Scheme](https://github.com/viacoin/viacore-ecies)
-* [Blockchain Explorers](https://github.com/viacoin/viacore-explorers)
-* [Signed Messages](https://github.com/viacoin/viacore-message)
+* [Payment Protocol Support](https://github.com/potcoin/potcore-payment-protocol)
+* [Peer to Peer Networking](https://github.com/potcoin/potcore-p2p)
+* [Bitcoin Core JSON-RPC](https://github.com/potcoin/bitcoind-rpc)
+* [Payment Channels](https://github.com/potcoin/potcore-channel)
+* [Mnemonics](https://github.com/potcoin/potcore-mnemonic)
+* [Elliptical Curve Integrated Encryption Scheme](https://github.com/potcoin/potcore-ecies)
+* [Blockchain Explorers](https://github.com/potcoin/potcore-explorers)
+* [Signed Messages](https://github.com/potcoin/potcore-message)
 
 # Examples
 
 ## Create and Save a Private Key
 
 ```javascript
-var privateKey = new viacore.PrivateKey();
+var privateKey = new potcore.PrivateKey();
 
 var exported = privateKey.toWIF();
 // e.g. L3T1s1TYP9oyhHpXgkyLoJFGniEgkv2Jhi138d7R2yJ9F4QdDU2m
-var imported = viacore.PrivateKey.fromWIF(exported);
+var imported = potcore.PrivateKey.fromWIF(exported);
 var hexa = privateKey.toString();
 // e.g. 'b9de6e778fe92aa7edb69395556f843f1dce0448350112e14906efc2a80fa61a'
 ```
@@ -68,7 +68,7 @@ var address = privateKey.toAddress();
 
 ```javascript
 // Build a 2-of-3 address from public keys
-var p2shAddress = new viacore.Address([publicKey1, publicKey2, publicKey3], 2);
+var p2shAddress = new potcore.Address([publicKey1, publicKey2, publicKey3], 2);
 ```
 
 ## Request a Payment
@@ -78,7 +78,7 @@ var paymentInfo = {
   address: '1DNtTk4PUCGAdiNETAzQFWZiy2fCHtGnPx',
   amount: 120000 //satoshis
 };
-var uri = new viacore.URI(paymentInfo).toString();
+var uri = new potcore.URI(paymentInfo).toString();
 ```
 
 ## Create a Transaction

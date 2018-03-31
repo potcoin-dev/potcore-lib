@@ -1,5 +1,5 @@
 
 
-var bitcoreTasks = require('viacore-build');
+var bitcoreTasks = require('potcore-build');
 
 bitcoreTasks('lib');

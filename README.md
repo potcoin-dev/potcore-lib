@@ -1,65 +1,65 @@
-Viacore Library
+Potcore Library
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-lib.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-lib)
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-lib)
 [![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-lib.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcore-lib)
 
-A pure and powerful JavaScript Viacoin library.
+A pure and powerful JavaScript Potcoin library.
 
 ## Principles
 
-Viacoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Viacoin network allows for highly resilient viacoin infrastructure, and the developer community needs reliable, open-source tools to implement viacoin apps and services.
+Potcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Potcoin network allows for highly resilient potcoin infrastructure, and the developer community needs reliable, open-source tools to implement potcoin apps and services.
 
 ## Get Started
 
 ```
-npm install viacore-lib
+npm install potcore-lib
 ```
 
 ```
-bower install viacore-lib
+bower install potcore-lib
 ```
 
 ## Documentation
 
-The complete docs are hosted here: [viacore documentation](http://bitcore.io/guide/). There's also a [bitcore API reference](http://bitcore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each viacore utility.
+The complete docs are hosted here: [potcore documentation](http://bitcore.io/guide/). There's also a [bitcore API reference](http://bitcore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each potcore utility.
 
 - [Read the Developer Guide](http://bitcore.io/guide/)
 - [Read the API Reference](http://bitcore.io/api/)
 
 ## Examples
 
-* [Generate a random address](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#generate-a-random-address)
-* [Generate a address from a SHA256 hash](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#generate-a-address-from-a-sha256-hash)
-* [Import an address via WIF](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#import-an-address-via-wif)
-* [Create a Transaction](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#create-a-transaction)
-* [Sign a Viacoin message](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#sign-a-viacoin-message)
-* [Verify a Viacoin message](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#verify-a-viacoin-message)
-* [Create an OP RETURN transaction](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#create-an-op-return-transaction)
-* [Create a 2-of-3 multisig P2SH address](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#create-a-2-of-3-multisig-p2sh-address)
-* [Spend from a 2-of-2 multisig P2SH address](https://github.com/viacoin/viacore-lib/blob/master/docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
+* [Generate a random address](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#generate-a-random-address)
+* [Generate a address from a SHA256 hash](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#generate-a-address-from-a-sha256-hash)
+* [Import an address via WIF](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#import-an-address-via-wif)
+* [Create a Transaction](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#create-a-transaction)
+* [Sign a Potcoin message](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#sign-a-potcoin-message)
+* [Verify a Potcoin message](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#verify-a-potcoin-message)
+* [Create an OP RETURN transaction](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#create-an-op-return-transaction)
+* [Create a 2-of-3 multisig P2SH address](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#create-a-2-of-3-multisig-p2sh-address)
+* [Spend from a 2-of-2 multisig P2SH address](https://github.com/potcoin/potcore-lib/blob/master/docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
 
 
 ## Security
 
-We're using Viacore in production, but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
+We're using Potcore in production, but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
 
 If you find a security issue, please email security@bitpay.com.
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/viacoin/viacore-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/potcoin/potcore-lib/blob/master/CONTRIBUTING.md) file.
 
 ## Building the Browser Bundle
 
-To build a viacore-lib full bundle for the browser:
+To build a potcore-lib full bundle for the browser:
 
 ```sh
 gulp browser
 ```
 
-This will generate files named `viacore-lib.js` and `viacore-lib.min.js`.
+This will generate files named `potcore-lib.js` and `potcore-lib.min.js`.
 
 You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout a release commit (for example, https://github.com/bitpay/bitcore-lib/commit/e33b6e3ba6a1e5830a079e02d949fce69ea33546 for v0.12.6).
 
@@ -73,8 +73,8 @@ To verify signatures, use the following PGP keys:
 ## Development & Tests
 
 ```sh
-git clone https://github.com/viacoin/viacore-lib
-cd viacore-lib
+git clone https://github.com/potcoin/potcore-lib
+cd potcore-lib
 npm install
 ```
 
@@ -89,7 +89,7 @@ or create a test coverage report (you can open `coverage/lcov-report/index.html`
 
 ## License
 
-Code released under [the MIT license](https://github.com/viacoin/viacore-lib/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/potcoin/potcore-lib/blob/master/LICENSE).
 
 Copyright 2013-2017 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
-Copyright 2017 The Viacoin Core Developers
+Copyright 2017 The Potcoin Core Developers

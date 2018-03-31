@@ -1,11 +1,11 @@
 # Browser Builds
-Viacore and most official submodules work in the browser, thanks to [browserify](http://browserify.org/) (some modules are not fully compatible with web browsers).
+Potcore and most official submodules work in the browser, thanks to [browserify](http://browserify.org/) (some modules are not fully compatible with web browsers).
 
-The easiest and recommended way to use them, is via [Bower](http://bower.io/), a browser package manager, and get the release bundles. For example, when building an app that uses `viacore` and `viacore-mnemonic`, you do:
+The easiest and recommended way to use them, is via [Bower](http://bower.io/), a browser package manager, and get the release bundles. For example, when building an app that uses `potcore` and `potcore-mnemonic`, you do:
 
 ```sh
-bower install viacore-lib
-bower install viacore-mnemonic
+bower install potcore-lib
+bower install potcore-mnemonic
 ```
 
 You can also use a `bower.json` file to store the dependencies of your project:
@@ -16,8 +16,8 @@ You can also use a `bower.json` file to store the dependencies of your project:
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "viacore-lib": "^0.13.7",
-    "viacore-mnemonic": "^1.0.1"
+    "potcore-lib": "^0.13.7",
+    "potcore-mnemonic": "^1.0.1"
   }
 }
 ```
@@ -32,15 +32,15 @@ After this, you can include the bundled release versions in your HTML file:
 
 <head>
   <meta charset="utf-8">
-  <script src="bower_components/viacore/viacore-lib.min.js"></script>
-  <script src="bower_components/viacore-mnemonic/viacore-mnemonic.min.js"></script>
+  <script src="bower_components/potcore/potcore-lib.min.js"></script>
+  <script src="bower_components/potcore-mnemonic/potcore-mnemonic.min.js"></script>
 </head>
 
 <body>
 
   <script type="text/javascript">
-    var viacore = require('viacore-lib');
-    var Mnemonic = require('viacore-mnemonic');
+    var potcore = require('potcore-lib');
+    var Mnemonic = require('potcore-mnemonic');
     // etc...
   </script>
 
@@ -53,11 +53,11 @@ After this, you can include the bundled release versions in your HTML file:
 If you want to use a specific version of a module, instead of a release version (not recommended), you must run browserify yourself.  You can get a minified browser bundle by running the following on the project root folder.
 
 ```sh
-browserify --require ./index.js:viacore-lib | uglifyjs > viacore-lib.min.js
+browserify --require ./index.js:potcore-lib | uglifyjs > potcore-lib.min.js
 ```
 
 ```sh
-browserify --require ./index.js:viacore-mnemonic --external viacore-lib | uglifyjs > viacore-mnemonic.min.js
+browserify --require ./index.js:potcore-mnemonic --external potcore-lib | uglifyjs > potcore-mnemonic.min.js
 ```
 
 In many of the modules you can also run the command to build a browser bundle:

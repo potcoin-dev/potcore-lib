@@ -1,7 +1,7 @@
 {
-  "name": "viacore-lib",
+  "name": "potcore-lib",
   "version": "0.14.1",
-  "description": "A pure and powerful JavaScript Viacoin library.",
+  "description": "A pure and powerful JavaScript Potcoin library.",
   "author": "Romano <romanornr@gmail.com>",
   "main": "index.js",
   "scripts": {
@@ -60,7 +60,7 @@
     }
   ],
   "keywords": [
-    "viacoin",
+    "potcoin",
     "bitcoin",
     "transaction",
     "address",
@@ -78,7 +78,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/viacoin/viacore-lib.git"
+    "url": "https://github.com/potcoin/potcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -93,7 +93,7 @@
     "scryptsy": "=2.0.0"
   },
   "devDependencies": {
-    "viacore-build": "viacoin/viacore-build",
+    "potcore-build": "potcoin/potcore-build",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
